@@ -59,7 +59,7 @@ class Home extends Component {
       return item.products.SoGhe === prodFromProduct.SoGhe;
     });
 
-    if (index === -1) {
+    if (index === -1 && prodFromProduct.TrangThai === false ) {
       const listItem = {
         products: prodFromProduct,
         quantity: 1,
@@ -76,9 +76,7 @@ class Home extends Component {
         listProductOder: cloneListProductOder,
         toTalItem: this.state.toTalItem + 1,
       });
-
-    } else {
-
+    }else if(prodFromProduct.TrangThai === false){
       cloneListProductOder.splice(index, 1);
       localStorage.setItem(
         "listProductOder",

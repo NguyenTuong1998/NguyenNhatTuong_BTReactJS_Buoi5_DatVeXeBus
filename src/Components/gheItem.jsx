@@ -20,7 +20,7 @@ class GheItem extends Component {
           this.state.isbooking
             ? "btn btn-success mb-3"
             : "btn btn-secondary mb-3"
-        } && ${
+        }  ${
           this.props.data.TrangThai
             ? "btn btn-danger mb-3 disabled"
             : "btn btn-secondary mb-3"
