@@ -22,14 +22,9 @@ class GheItem extends Component {
             : "btn btn-secondary mb-3"
         } && ${
           this.props.data.TrangThai
-            ? "btn btn-danger mb-3"
+            ? "btn btn-danger mb-3 disabled"
             : "btn btn-secondary mb-3"
         }`}
-        // className={` btn ${
-        //   this.props.data.TrangThai
-        //     ? "btn btn-danger mb-3"
-        //     : "btn btn-secondary mb-3"
-        // }`}
       >
         {this.props.data.SoGhe}
       </div>
